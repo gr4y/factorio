@@ -1,6 +1,6 @@
 #!/bin/bash
 
 if [ ! -f /opt/factorio/saves/save0.zip ]; then
-  /opt/factorio/bin/x64/factorio --create saves/save0
+  /opt/factorio/bin/x64/factorio --create saves/save0.zip
 fi
-/opt/factorio/bin/x64/factorio --start-server saves/save0
+/opt/factorio/bin/x64/factorio --start-server saves/save0.zip
