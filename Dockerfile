@@ -10,7 +10,7 @@ RUN apt-get -y update && apt-get -y upgrade && apt-get install -y wget && rm -rf
 
 # Download Factorio Server
 RUN mkdir /opt/factorio && cd /opt/factorio
-RUN wget https://www.factorio.com/get-download/0.13.20/headless/linux64 -O - | tar -xz -C /opt/factorio
+RUN wget https://www.factorio.com/get-download/0.13.20/headless/linux64 -O - | tar -xz -C /opt/
 
 # Install init.sh
 ADD run.sh /opt/factorio/
