@@ -16,7 +16,9 @@ RUN wget https://www.factorio.com/get-download/0.13.20/headless/linux64 -O - | t
 ADD run.sh /opt/factorio/
 
 WORKDIR /opt/factorio
-VOLUME /opt/factorio
+VOLUME /opt/factorio/saves
+
+EXPOSE 34197/udp
 
 # Run minecraft.service
 CMD ["/opt/factorio/run.sh"]
