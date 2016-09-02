@@ -14,7 +14,6 @@ RUN wget https://www.factorio.com/get-download/0.13.20/headless/linux64 -O - | t
 
 # Install init.sh
 ADD run.sh /opt/factorio/
-RUN chmod +x /opt/factorio/run.sh
 
 WORKDIR /opt/factorio
 VOLUME /opt/factorio
