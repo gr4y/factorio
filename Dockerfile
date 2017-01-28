@@ -16,7 +16,7 @@ RUN wget https://www.factorio.com/get-download/0.14.21/headless/linux64 -O - | t
 ADD run.sh /opt/factorio/
 
 WORKDIR /opt/factorio
-VOLUME /opt/factorio/saves
+VOLUME ["/opt/factorio/saves", "/opt/factorio/mods"]
 
 EXPOSE 34197/udp
 
