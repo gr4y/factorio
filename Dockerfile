@@ -1,5 +1,5 @@
 # Factorio
-# docker run -d -p 34197:34197/udp -v /data/factorio/saves:/opt/factorio/saves --name factorio gr4y/factorio
+# docker run -d -p 34197:34197/udp -v /data/factorio/saves:/opt/factorio/saves -v /data/factorio/mods:/opt/factorio/mods --name factorio gr4y/factorio
 
 FROM ubuntu:xenial
 
